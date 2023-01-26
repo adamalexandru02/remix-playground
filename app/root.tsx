@@ -5,6 +5,7 @@ import {
     Links,
     useCatch,
     Meta,
+    Scripts,
 } from "@remix-run/react";
 
 import globalStylesUrl from "./styles/global.css";
@@ -58,6 +59,7 @@ function Document({ children, title = `Remix: So great, it's funny!` }: {
         </head>
         <body>
         {children}
+        <Scripts />
         <LiveReload />
         </body>
         </html>
