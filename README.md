@@ -4,7 +4,26 @@
 
 ## Development
 
-From your terminal:
+Create .env File that contains the following information:
+
+```sh
+DATABASE_URL=
+SESSION_SECRET=
+```
+Make sure you have all npm modules installed. Run:
+
+```sh
+npm install
+```
+
+To init database and create the tables run:
+
+```sh
+npx prisma db push
+npx prisma db seed
+```
+
+Then you can run:
 
 ```sh
 npm run dev
