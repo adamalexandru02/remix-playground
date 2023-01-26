@@ -15,9 +15,9 @@ export const links: LinksFunction = () => {
 };
 
 export const loader = async ({ request }: LoaderArgs) => {
-
     const jokeListItems = await db.joke.findMany();
     const user = await getUser(request);
+
     return json({
         jokeListItems,
         user,
